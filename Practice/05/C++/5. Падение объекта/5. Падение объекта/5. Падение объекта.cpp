@@ -16,7 +16,7 @@ int main()
     cin >> t;
     cout << "\n";
     cout << "x(t) = " << x0 + v0 * t - ((9.8 * t * t) / 2);
-    
+
 
 
 }

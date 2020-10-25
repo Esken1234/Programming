@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{57448539-d663-474b-a697-9e63363de022}</ProjectGuid>
+    <ProjectGuid>{dc6063a0-23e9-4dc2-bd9b-a902daca2c7b}</ProjectGuid>
     <RootNamespace>My5Падениеобъекта</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

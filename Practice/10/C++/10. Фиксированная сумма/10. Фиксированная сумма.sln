@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10. Фиксированная сумма", "10. Фиксированная сумма\10. Фиксированная сумма.vcxproj", "{33FE2B53-8D58-4391-AC64-500521A46E75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Debug|x64.ActiveCfg = Debug|x64
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Debug|x64.Build.0 = Debug|x64
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Debug|x86.ActiveCfg = Debug|Win32
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Debug|x86.Build.0 = Debug|Win32
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Release|x64.ActiveCfg = Release|x64
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Release|x64.Build.0 = Release|x64
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Release|x86.ActiveCfg = Release|Win32
+		{33FE2B53-8D58-4391-AC64-500521A46E75}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7507561-D0F9-41ED-B761-58A50E576A5F}
+	EndGlobalSection
+EndGlobal
