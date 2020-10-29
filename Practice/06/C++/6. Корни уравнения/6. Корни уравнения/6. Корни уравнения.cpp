@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -21,7 +22,7 @@ int main()
 
     w2 = -c / b;
 
-    w1 = "Такого значения х не существует";
+    w1 = "Такого значения х не существует\n";
     
     if (a == 0) {
 
@@ -29,7 +30,7 @@ int main()
 
             if (c == 0) {
 
-                cout << "Корень уравнения любое значение х";
+                cout << "Корень уравнения любое значение х\n";
 
             }
             else {
@@ -46,11 +47,13 @@ int main()
             cout << "x = " << -b / (2 * a);
         }
         else {
-            if (D < 0) { cout << "Такого значения х не существует"; }
+            if (D < 0) { cout << "Такого значения х не существует\n"; }
             else {
                 cout << "x1 = " << w3 << "\n";
-                cout << "x2 = " << w4;
+                cout << "x2 = " << w4<<"\n";
             }
         }
     }
+    system("pause");
+    return 0;
 }

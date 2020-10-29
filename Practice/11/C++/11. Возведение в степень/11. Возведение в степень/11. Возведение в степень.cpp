@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -13,25 +14,26 @@ int main()
     a1 = a;
     b1 = sqrt(b * b);
     if (b >= 0) {
-        if (b == 0) cout << 1;
-        else if (b == 1) cout << a;
+        if (b == 0) cout << 1 << "\n";
+        else if (b == 1) cout << a << "\n";
         else {
             for (int i = 2; i <= b; i += 1) {
                 a = a * a1;
             }
-            cout << a;
+            cout << a<<"\n";
         }
     }
     else {
-        if (b == -1) cout << 1 / a;
+        if (b == -1) cout << 1 / a << "\n";
         else {
             for (int i = 2; i <= b1; i += 1) {
                 a = a * a1;
             }
-            cout << 1 / a;
+            cout << 1 / a << "\n";
         }
     }
-    
+    system("pause");
+    return 0;
 
 
 

@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -20,10 +21,11 @@ int main()
     c = sqrt((a - b)*(a-b));
 
     if (c <= 15)
-        cout << "Встреча состоится";
+        cout << "Встреча состоится\n";
     else
-        cout << "Встреча не состоится";
+        cout << "Встреча не состоится\n";
     
-
+    system("pause");
+    return 0;
 
 }

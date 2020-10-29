@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -15,8 +16,9 @@ int main()
     cout << "t = ";
     cin >> t;
     cout << "\n";
-    cout << "x(t) = " << x0 + v0 * t - ((9.8 * t * t) / 2);
-
+    cout << "x(t) = " << x0 + v0 * t - ((9.8 * t * t) / 2)<<"\n";
+    system("pause");
+    return 0;
 
 
 }

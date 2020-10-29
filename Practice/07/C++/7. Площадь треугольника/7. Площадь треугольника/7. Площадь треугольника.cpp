@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -18,9 +19,9 @@ int main()
 
         if ((a < b + c) && (b < a + c) && (c < b + a)) {
             p = (a+b+c)/2;
-            cout <<"Площадь треугольника равна " <<sqrt(p*(p-a)*(p-b)*(p-c));
+            cout <<"Площадь треугольника равна " <<sqrt(p*(p-a)*(p-b)*(p-c))<<"\n";
         }
-        else cout<<"\nТакого треугольника не существует";
+        else cout<<"\nТакого треугольника не существует\n";
 
     }
     else {
@@ -29,12 +30,13 @@ int main()
             cin >> xa; cin >> ya;
             cin >> xb; cin >> yb;
             cin >> xc; cin >> yc;
-            cout <<"Площадь треугольника равна "<< 0.5 * sqrt(((xb - xa) * (yc - ya) - (xc - xa) * (yb - ya)) * ((xb - xa) * (yc - ya) - (xc - xa) * (yb - ya)));
+            cout <<"Площадь треугольника равна "<< 0.5 * sqrt(((xb - xa) * (yc - ya) - (xc - xa) * (yb - ya)) * ((xb - xa) * (yc - ya) - (xc - xa) * (yb - ya)))<<"\n";
         }
-        else cout << "\nОшибочный ввод";
+        else cout << "\nОшибочный ввод\n";
     }
 
-
+    system("pause");
+    return 0;
 
 
 }

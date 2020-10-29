@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b29a21a0-dcf7-4129-ad35-284d7ff90475}</ProjectGuid>
+    <ProjectGuid>{2b09bb5f-816f-490d-ac97-b214303d5e95}</ProjectGuid>
     <RootNamespace>My2Переменныеintиdouble</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -11,6 +12,7 @@ int main()
 	for (int i = 1; i <= n; i += 1) {
 		a = a * i;
 	}
-	cout << a;
-
+	cout << a<<"\n";
+	system("pause");
+	return 0;
 }
