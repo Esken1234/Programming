@@ -1,6 +1,7 @@
 ﻿#include <stdlib.h>
 #include <iostream>
 #include <time.h>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -20,4 +21,6 @@ int main()
             else if (i == 5) { cout << "Вы проиграли.Было загадано : " << n<< "\nХотите начать сначала? (1 - ДА )\n"; cin >> x; if (x == 1) break; else return 0; } else cout << "\nЗагаданное число меньше\n";
         }
     }
+    system("pause");
+    return 0;
 }
