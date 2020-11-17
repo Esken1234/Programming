@@ -1,8 +1,14 @@
 ﻿#include <iostream>
 #include <fstream>
 #include <json.hpp>
+#include <string>
 using json = nlohmann::json;
 using namespace std;
+
+struct abc {
+    int userId;
+    int task_completed;
+};
 
 int main()
 {
@@ -13,19 +19,31 @@ int main()
         in_file >> j;
         int q = 1;
         int w = 0;
-        json j2 = json::array();
+        json j3 = json::array();
 
-        for (int i = 1; i < j[i]["id"]; i += 1) {
+        for (int i = 0; i < j[i]/*["id"]*/; i += 1) {
             if (j[i]["userId"] == q) {
-                if (j[i]["completed"] == true) {
+                /*if (j[i]["completed"] == true) {
                     w = w + 1;
-                }
-                j2.push_back(w);
-                cout << j2[i - 1] << "\n\n";
+                }*/
+                w=j[i]["completed"].get<int>() + w;
 
             }
-            else { q = q + 1; }
+            else {
+                abc p{ q,w };
+                nlohmann::json j2{};
+                j2["userId"] = p.userId;
+                j2["task_completed"] = p.task_completed;
+                cout << j2 << endl;
+                q = q + 1;
+                w = 0;
+            }
         }
+        abc p{ q,w };
+        nlohmann::json j2{};
+        j2["userId"] = p.userId;
+        j2["task_completed"] = p.task_completed;
+        cout << j2 << endl;
     }
     else { cout << "\nНе удалось открыть файл\n"; }
 }
