@@ -11,11 +11,6 @@ double sinx(double x, double k)
 		Sum = Sum + tern;
 	}
 	return Sum;
-
-
-
-
-
 }
 
 #endif
