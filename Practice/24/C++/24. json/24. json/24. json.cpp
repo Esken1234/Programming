@@ -1,49 +1,50 @@
 ﻿#include <iostream>
+#include "json.hpp"
 #include <fstream>
-#include <json.hpp>
+#include <string>
+#include <vector>
+#include <iomanip>
 #include <string>
 using json = nlohmann::json;
 using namespace std;
 
 struct abc {
-    int userId;
-    int task_completed;
+	int userId;
+	int task_completed;
 };
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
-    std::ifstream in_file("nlohmann/in.json");
-    if (in_file.is_open()) {
-        json j;
-        in_file >> j;
-        int q = 1;
-        int w = 0;
-        json j3 = json::array();
+	setlocale(LC_ALL, "Russian");
+	ifstream in_file("nlohmann/in.json");
+	json out;
+	if (in_file.is_open()) {
+		json j;
+		in_file >> j;
+		int q = 1;
+		int w = 0;
+		int d = 0;
 
-        for (int i = 0; i < j[i]/*["id"]*/; i += 1) {
-            if (j[i]["userId"] == q) {
-                /*if (j[i]["completed"] == true) {
-                    w = w + 1;
-                }*/
-                w=j[i]["completed"].get<int>() + w;
+		for (int i = 0; i < j[i]; i += 1) {
 
-            }
-            else {
-                abc p{ q,w };
-                nlohmann::json j2{};
-                j2["userId"] = p.userId;
-                j2["task_completed"] = p.task_completed;
-                cout << j2 << endl;
-                q = q + 1;
-                w = 0;
-            }
-        }
-        abc p{ q,w };
-        nlohmann::json j2{};
-        j2["userId"] = p.userId;
-        j2["task_completed"] = p.task_completed;
-        cout << j2 << endl;
-    }
-    else { cout << "\nНе удалось открыть файл\n"; }
+			if (j[i]["userId"] != q) {
+				q = q + 1;
+				abc p{ q,w };
+				out[d]["userId"] = int(p.userId - 1);
+				out[d]["task_completed"] = int(p.task_completed);
+				d++;
+				w = 0;
+				if (bool(j[i]["completed"]) == true) w++;
+			}
+			else {
+				if (bool(j[i]["completed"]) == true) w++;
+			}
+		}
+		abc p{ q,w };
+		out[d]["userId"] = p.userId;
+		out[d]["task_completed"] = p.task_completed;
+	}
+	else { cout << "\nНе удалось открыть файл\n"; }
+	std::ofstream out_file("out.json");
+	out_file << out;
 }
