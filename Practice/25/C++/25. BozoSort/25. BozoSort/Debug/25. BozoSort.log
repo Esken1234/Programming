@@ -1,0 +1,15 @@
+﻿  25. BozoSort.cpp
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(19,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(21,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(46,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(48,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(77,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(79,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(104,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(106,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(135,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(137,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(139,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(141,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Programming\Practice\25\C++\25. BozoSort\25. BozoSort\25. BozoSort.cpp(221,18): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  25. BozoSort.vcxproj -> C:\Programming\Practice\25\C++\25. BozoSort\Debug\25. BozoSort.exe
