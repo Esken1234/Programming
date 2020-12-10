@@ -16,4 +16,6 @@ int main()
             else break;
         }
     }
+    system("pause");
+    return 0;
 }

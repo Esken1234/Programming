@@ -125,7 +125,7 @@ void BozoSort(vector<int>& b) {
 	bb = b1;
 }
 
-void BozoSort(int n1, int y, vector<vector<int>>& c) {
+/*void BozoSort(int n1, int y, vector<vector<int>>& c) {
 	int ii = 0;
 	int j = 1;
 	int r = 0;
@@ -166,7 +166,7 @@ void BozoSort(int n1, int y, vector<vector<int>>& c) {
 		}
 	}
 	c = c1;
-}
+}*/
 
 int main()
 {
@@ -218,14 +218,14 @@ int main()
 
 	cout << "\n";
 
-	BozoSort(n, sqrt(n), c);
+	/*BozoSort(n, sqrt(n), c);
 
 	for (int i = 0; i < (sqrt(n)); i++) {
 		for (int j = 0; j < (sqrt(n)); j++) {
 			cout << c[i][j];
 		}
 	}
-
+	*/
 	cout << "\n";
 
 	BozoSort(b);

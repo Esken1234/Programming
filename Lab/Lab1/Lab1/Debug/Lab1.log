@@ -1,0 +1,23 @@
+﻿  Lab1.cpp
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(24,13): error C2082: переопределение формального параметра "res"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(26,9): error C2451: недопустимое условное выражение типа "httplib::Response"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(26,6): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(28,6): error C2819: тип "httplib::Response" не имеет перегруженный "operator ->"
+C:\Programming\Lab\Lab1\Lab1\include\cpp_httplib\httplib.h(423): message : см. объявление "httplib::Response"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(28,6): message : возможно, имеется в виду "."
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(28,6): error C2232: ->httplib::Response::status: левый операнд имеет тип "struct", используйте "."
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(31,23): error C2819: тип "httplib::Response" не имеет перегруженный "operator ->"
+C:\Programming\Lab\Lab1\Lab1\include\cpp_httplib\httplib.h(423): message : см. объявление "httplib::Response"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(31,23): message : возможно, имеется в виду "."
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(31,29): error C2232: ->httplib::Response::body: левый операнд имеет тип "struct", используйте "."
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(32,3): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(34,39): error C2819: тип "httplib::Response" не имеет перегруженный "operator ->"
+C:\Programming\Lab\Lab1\Lab1\include\cpp_httplib\httplib.h(423): message : см. объявление "httplib::Response"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(34,39): message : возможно, имеется в виду "."
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(34,48): error C2232: ->httplib::Response::status: левый операнд имеет тип "struct", используйте "."
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(38,23): error C2039: "error": не является членом "httplib::Response".
+C:\Programming\Lab\Lab1\Lab1\include\cpp_httplib\httplib.h(423): message : см. объявление "httplib::Response"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(39,38): error C3536: err: не может использоваться до инициализации
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(46,19): error C2664: "httplib::Server &httplib::Server::Get(const char *,httplib::Server::Handler)": невозможно преобразовать аргумент 2 из "overloaded-function" в "httplib::Server::Handler"
+C:\Programming\Lab\Lab1\Lab1\Lab1.cpp(46,19): message : Ни один конструктор не смог принять исходный тип, либо разрешение перегрузки конструктора неоднозначно
+C:\Programming\Lab\Lab1\Lab1\include\cpp_httplib\httplib.h(3854,24): message : см. объявление "httplib::Server::Get"
