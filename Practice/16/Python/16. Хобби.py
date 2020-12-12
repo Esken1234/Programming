@@ -1,6 +1,5 @@
 x=int(input())
 i = 1
-j = 0
 while i <= x:
     a=input()
     i += 1

@@ -4,71 +4,57 @@
 using namespace std;
 
 void print_factorization(unsigned int n) {
-    std::vector<int> b;
-    int i = 2;
-    int j = 0;
-    int w = 1;
-    int q = 0;
-    int qw = 0;
-    int n1 = n;
-    while (i) {
-        if (!(n1 % i)) {
-            n1 = n1 / i;
-            b.push_back(i);
-            i = 2;
+    if (n < 4) { cout << n; }
+    else {
+        std::vector<int> b;
+        int i = 2;
+        int j = 0;
+        int w = 1;
+        int w1 = 1;
+        int n1 = n;
+        while (i) {
+            if (!(n1 % i)) {
+                n1 = n1 / i;
+                b.push_back(i);
+                i = 2;
+            }
+            else { i++; }
+            if ((n1 / i) == 1) {
+                b.push_back(n1);
+                i = 0;
+            }
         }
-        else { i++; }
-        if ((n1 / i) == 1) {
-
-            b.push_back(n1);
-            i = 0;
-        }
-    }
-    for (; q < b.capacity(); q++) {
-        if ((b.capacity()) > 1) {
-            if (q < (b.capacity() - 1)) {
-                if (b[q] == b[q + 1]) {
-                    w = w + 1;
-                }
-                else {
-                    if (w == 1) {
-                        if (!(q == 0)) {
-                            cout << "*";
-                        }
-                        cout << b[q];
-                        qw++;
-                    }
-                    else {
-                        cout << b[q] << "^" << w;
-                        w = 1;
-                        qw++;
-                    }
-                }
+        while ((b.size()) > 0) {
+            if ((b.size()) == 1) {
+                cout << b[0];
+                b.clear();
             }
             else {
-                if (b[q] == b[q - 1]) {
-                    w = w + 1;
-                }
-                else {
-                    if (w == 1) {
-                        cout << "*" << b[q];
-                        qw++;
+                for (int q = 0; q < (b.size() - 1); q++) {
+                    if (b.size() < 2) {
+                        q = b.size() + 10000;
                     }
                     else {
-                        cout << b[q] << "^" << w;
-                        w = 1;
-                        qw++;
+                        if (b[q] == b[q + 1]) {
+                            if (q == (b.size() - 2)) {
+                                cout << b[0] << "^" << b.size();
+                                b.clear();
+                            }
+                        }
+                        else {
+                            w = b[0];
+                            w1 = q + 1;
+                            auto begin = b.cbegin();
+                            b.erase(begin, begin + q + 1);
+                            if (w1 > 1) {
+                                cout << w << "^" << w1 << "*";
+                            }
+                            else cout << w << "*";
+                        }
                     }
                 }
             }
         }
-        else {
-            cout << b[0];
-            qw++;
-        }
-    }
-    if (qw < 2) {
-        cout <<"*"<< b[q-1] << "^" << w-1;
     }
 }
 
