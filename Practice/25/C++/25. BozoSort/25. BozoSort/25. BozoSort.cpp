@@ -7,7 +7,6 @@ using namespace std;
 
 std::vector<int> aa;
 std::vector<int> bb;
-//std::vector< std::vector<int>> cc;
 
 void BozoSort(int n1, vector<int>& a) {
 	int i = 0;
@@ -125,49 +124,6 @@ void BozoSort(vector<int>& b) {
 	bb = b1;
 }
 
-/*void BozoSort(int n1, int y, vector<vector<int>>& c) {
-	int ii = 0;
-	int j = 1;
-	int r = 0;
-	int g, g1, h, h1, w;
-	std::vector<std::vector<int>> c1 = c;
-	for (; ii == 0;) {
-		srand(time(0));
-		g = rand() % y;
-		srand(time(0));
-		g1 = rand() % y;
-		srand(time(0));
-		h = rand() % y;
-		srand(time(0));
-		h1 = rand() % y;
-		w = c1[g][g1];
-		c1[g][g1] = c1[h][h1];
-		c1[h][h1] = w;
-		j = 1;
-		r = 0;
-
-		for (int i = 0; i < (sqrt(n1)); i++) {
-			for (; j < (sqrt(n1)); j++) {
-				if (c1[i][j - 1] <= c1[i][j]) {
-					if (i < y) {
-						if ((c[i][y])<(c[i+1][0])){
-
-						}
-						else r = 0;
-					}
-					r = r + 1;
-				}
-				else r = 0;
-			}
-		}
-
-		if (r == (n1 - 2)) {
-			ii = 1;
-		}
-	}
-	c = c1;
-}*/
-
 int main()
 {
 	setlocale(LC_ALL, "Russian");
@@ -217,15 +173,6 @@ int main()
 	}
 
 	cout << "\n";
-
-	/*BozoSort(n, sqrt(n), c);
-
-	for (int i = 0; i < (sqrt(n)); i++) {
-		for (int j = 0; j < (sqrt(n)); j++) {
-			cout << c[i][j];
-		}
-	}
-	*/
 	cout << "\n";
 
 	BozoSort(b);
@@ -241,14 +188,6 @@ int main()
 	}
 
 	cout << "\n";
-
-
-
-	/*for (int i = 0; i < (sqrt(n)); i++) {
-		for (int j = 0; j < (sqrt(n)); j++) {
-			cout << cc[i][j];
-		}
-	}*/
 
 	cout << "\n";
 	system("pause");

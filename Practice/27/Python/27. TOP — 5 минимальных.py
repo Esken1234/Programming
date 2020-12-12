@@ -1,16 +1,22 @@
 x=int(input())
 a = list(map(int, input().split()))
-q=1
+q=0
 i=1
 j=0
 b=[]
-while(q<6):
-    while(i<=len(a)):
-        while(j<i):
-            b.append(a[j])
-            j=j+1
-        b=sorted(b, reverse=True)
-        [print(i, "", sep="", end="") for i in b]
+с=[]
+while(i<=len(a)):
+    while(j<i):
+        b.append(a[j])
+        j=j+1
+    b=sorted(b, reverse=True)
+    if(len(b)>5):
+        while(q<5):
+            с.append(b[q])
+        [print(i, "", sep="", end=" ") for i in с]
         print('\n')
-        i=i+1    
-    q=q+1
+        q=q+1
+    else:
+        [print(i, "", sep="", end=" ") for i in b]
+        print('\n')
+    i=i+1    
