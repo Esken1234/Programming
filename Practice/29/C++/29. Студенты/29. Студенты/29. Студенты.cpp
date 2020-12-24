@@ -33,15 +33,15 @@ int main()
 	AkihikoK.name = "Akihiko K";
 	AkihikoK.group = 1;
 	AkihikoK.mathematics = 4;
-	AkihikoK.physics = 2;
+	AkihikoK.physics = 3;//2;
 	AkihikoK.history = 3;
 	AkihikoK.programming = 5;
 	
 	PerssonМ.name = "Persson М";
 	PerssonМ.group = 2;
 	PerssonМ.mathematics = 3;
-	PerssonМ.physics = 2;
-	PerssonМ.history = 2;
+	PerssonМ.physics = 3;// 2;
+	PerssonМ.history = 3;// 2;
 	PerssonМ.programming = 4;
 
 	KojimaH.name = "Kojima H";
@@ -93,7 +93,7 @@ int main()
 			r1 = 1;
 		}
 	}
-	if (r1 == 1) {
+	if (r1 == 0) {
 		cout << "Not found";
 	}
 
