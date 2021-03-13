@@ -17,7 +17,7 @@
 </tr>
 </table>
 <br><br>
-<p align="center">Симферополь, 2020</p>
+<p align="center">Симферополь, 2021</p>
 <hr>
 
 <h4>Цель:</h4>
@@ -32,7 +32,7 @@
 <h3>Задание 1</h3>
 Сначала я скачал с официального сайта Qt и установил. Для проверки нажал на проект <i>Calculator Form Example</i>. Открылись окна справки и настройки проекта.
 Затем я заменил в каталоге <i>Формы</i> текст "Input 1", "Input 2", "Output" на "Ввод 1", "Ввод 2" и "Вывод" соответственно.
-<p align="center">![](./image/pic1.png)</p>
+<p align="center">![](./Lab/Lab4/image/pic1.png)</p>
 <p align="center">Рис. 1. Приложение <i>Calculator Form Example</i></p>
 
 <h3>Задание 2</h3>
