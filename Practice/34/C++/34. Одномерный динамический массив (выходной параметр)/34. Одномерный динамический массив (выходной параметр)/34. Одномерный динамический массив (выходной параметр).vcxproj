@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dddf9c21-87bb-4594-8d4c-f608015f09be}</ProjectGuid>
+    <ProjectGuid>{26def2cc-5770-4db9-8f68-1833f671e90d}</ProjectGuid>
     <RootNamespace>My34Одномерныйдинамическиймассиввыходнойпараметр</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

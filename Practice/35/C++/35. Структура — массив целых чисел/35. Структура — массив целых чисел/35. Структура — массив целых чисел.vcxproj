@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c6ccf460-ed49-42a3-88b6-a220906582c0}</ProjectGuid>
+    <ProjectGuid>{42e6f1e1-ea0a-46b9-ab31-a775a62591b5}</ProjectGuid>
     <RootNamespace>My35Структурамассивцелыхчисел</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
