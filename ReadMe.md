@@ -29,3 +29,6 @@
 | Практическая 25 - [[C++]](./Practice/25/C++/) [[Python]](./Practice/25/Python/) |
 | Практическая 27 - [[C++]](./Practice/27/C++/) [[Python]](./Practice/27/Python/) |
 | Практическая 28 - [[C++]](./Practice/28/C++/) [[Python]](./Practice/28/Python/) |
+| Практическая 33 - [[C++]](./Practice/33/C++/) [[Python]](./Practice/33/Python/) |
+| Практическая 34 - [[C++]](./Practice/34/C++/)|
+| Практическая 35 - [[C++]](./Practice/35/C++/)|
