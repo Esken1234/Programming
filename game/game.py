@@ -5,12 +5,7 @@ import time
 import os
 import pygame as pg
 import sys
-import json
 import socket
-
-
-
-
 
 
 def bot(rand_piece):
@@ -26,7 +21,6 @@ def bot(rand_piece):
 	global kk
 	global blok_piece
 	global nn
-
 
 	
 	if(hod[0]):
@@ -62,8 +56,6 @@ def bot(rand_piece):
 		nn = False
 
 
-
-
 	if(nn):
 		i = 0
 		while(i < len(COORDS)):
@@ -97,9 +89,6 @@ def bot(rand_piece):
 			return 1000000
 
 
-
-
-
 bot_coords = []
 distance = []
 
@@ -120,10 +109,6 @@ mm = False
 win_red = [25, 26, 27, 8, 16, 28]#[55, 26, 25, 8, 7, 13]
 win_yellow = [29, 14, 30, 31, 32, 3]#[17, 6, 48, 58, 53, 11]
 win_green = [33, 34, 6, 35, 36, 5]#[15, 39, 9, 56, 40, 10]
-
-
-
-
 
 
 green_ = 0
@@ -155,7 +140,7 @@ u = [False, False, False, False, False, False, False, False, False, False, False
 COORDS = []
 COORDS_fishek = []
 COORDS_1 = []
-#arr = [57, 46, 47, 11, 16, 10, 9, 14, 8, 32, 33, 54, 59, 18, 6, 12, 7, 19]
+
 arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 
 arr_1 = [57, 46, 47, 11, 16, 10, 9, 14, 8, 32, 33, 54, 59, 18, 6, 12, 7, 19, 4, 5, 0, 1, 2, 3, 60, 55, 26, 25, 13, 17, 48, 58, 53, 15, 39, 56, 40]
@@ -225,23 +210,17 @@ class piece_red(pygame.sprite.Sprite):
 					i = 0
 					while(i < len(COORDS)):
 						
-						#print(COORDS[i], bot_coords[q])
 						if(bot_coords[q] == COORDS[i]):
 								mm = True
-								#print(i, arr)
-								#print(1)
 
 
 						if(mm):
 
 							time.sleep(0.5)
-							#print(i)
+
 							self.rect.center = (COORDS[i][0]+(r/2), COORDS[i][1]+(r/2))
 							COORDS_fishek[position] = (COORDS[i][0]+(r/2), COORDS[i][1]+(r/2))
 							arr[position] = i
-
-							#print(arr)
-							#print("red", i)
 
 							u[position] = False
 							f[position] = False
@@ -256,7 +235,6 @@ class piece_red(pygame.sprite.Sprite):
 									if(win_red[kk] == arr[j]):
 										blok_piece[j] = False
 										hod[kk] = False
-										#print(1)
 
 										if(j > 0):
 											blok_piece[j - 1] = True
@@ -311,34 +289,19 @@ class piece_red(pygame.sprite.Sprite):
 
 								sock.send(bytes(str(value_1)+ '\0', 'utf-8'))
 								time.sleep(0.1)
-								print(value_1)
-
 
 								sock.send(bytes(str(value_2) + '\0', 'utf-8'))
 								time.sleep(0.1)
-								print(value_2)
-
 
 								sock.send(bytes(str(value_3) + '\0', 'utf-8'))
 								time.sleep(0.1)
-								print(value_3)
-
 
 								sock.send(bytes(str(value_4) + '\0', 'utf-8'))
 								time.sleep(0.1)
-								print(value_4)
-
-								print((((((COORDS_fishek[q][0]-(a[0])) ** 2 + (COORDS_fishek[q][1] - (a[1])) ** 2)) ** 0.5) - r))
 								
 								data = sock.recv(1024)
 								data = data.decode(encoding="utf-8", errors="ignore")
 								data1 = data.rsplit(' ', 2)
-								#data = data[0]
-
-
-								print(data1)
-								print(data1[0])
-								
 
 								data = data1[0]
 								
@@ -397,7 +360,6 @@ class piece_yellow(pygame.sprite.Sprite):
 		global R
 		global r
 
-
 		if(yellow_):
 			if(u[position]):
 				if(event.type == pygame.MOUSEBUTTONDOWN):
@@ -420,34 +382,19 @@ class piece_yellow(pygame.sprite.Sprite):
 
 							sock.send(bytes(str(value_1)+ '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_1)
-
 
 							sock.send(bytes(str(value_2) + '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_2)
-
 
 							sock.send(bytes(str(value_3) + '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_3)
-
 
 							sock.send(bytes(str(value_4) + '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_4)
 
-							print((((((COORDS_fishek[q][0]-(a[0])) ** 2 + (COORDS_fishek[q][1] - (a[1])) ** 2)) ** 0.5) - r))
-							
 							data = sock.recv(1024)
 							data = data.decode(encoding="utf-8", errors="ignore")
 							data1 = data.rsplit(' ', 2)
-							#data = data[0]
-
-
-							print(data1)
-							print(data1[0])
-							
 
 							data = data1[0]
 							if(len(data) > 0):
@@ -510,7 +457,6 @@ class piece_green(pygame.sprite.Sprite):
 				if(event.type == pygame.MOUSEBUTTONDOWN):
 					if event.button == 3:
 						a = event.pos
-
 				
 						try:
 							sock = socket.socket()
@@ -527,34 +473,20 @@ class piece_green(pygame.sprite.Sprite):
 
 							sock.send(bytes(str(value_1)+ '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_1)
-
 
 							sock.send(bytes(str(value_2) + '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_2)
 
 
 							sock.send(bytes(str(value_3) + '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_3)
-
 
 							sock.send(bytes(str(value_4) + '\0', 'utf-8'))
 							time.sleep(0.1)
-							print(value_4)
-
-							print((((((COORDS_fishek[q][0]-(a[0])) ** 2 + (COORDS_fishek[q][1] - (a[1])) ** 2)) ** 0.5) - r))
 							
 							data = sock.recv(1024)
 							data = data.decode(encoding="utf-8", errors="ignore")
-							data1 = data.rsplit(' ', 2)
-							#data = data[0]
-
-
-							print(data1)
-							print(data1[0])
-							
+							data1 = data.rsplit(' ', 2)							
 
 							data = data1[0]
 							
@@ -593,8 +525,6 @@ class piece_green(pygame.sprite.Sprite):
 			u[position] = True
 		else:
 			self.rect.center = COORDS_fishek[position]
-
-
 
 class Button(pygame.sprite.Sprite):
 	def __init__(self):
@@ -696,8 +626,7 @@ class Button(pygame.sprite.Sprite):
 		i = 0
 		while(i < len(arr_1)):
 			COORDS_1.append(COORDS[arr_1[i]])
-			#print(arr_1[i], i)
-			#print(COORDS_1[i])
+
 			i = i + 1
 
 		COORDS.clear()
@@ -757,7 +686,6 @@ piece_yellow_img_.set_colorkey(WHITE)
 piece_green_img_ = pygame.image.load('green.png').convert()
 piece_green_img_ = pygame.transform.scale(piece_green_img_, (int(5 * r), int(5 * r)))
 piece_green_img_.set_colorkey(WHITE)
-
 
 
 krug = pygame.image.load('krug.png').convert()
@@ -863,7 +791,6 @@ while running:
 				while(i<18):
 					COORDS_fishek[i] = [0, 0]
 					i = i + 1
-
 
 	# Обновление
 
